@@ -1,2 +1,6 @@
+from datetime import datetime
+
 if __name__ == '__main__':
-	print('hello world')
+	now = datetime.now()
+	current_time = now.strftime("%H:%M:%S")
+	print('hello world at', current_time)
